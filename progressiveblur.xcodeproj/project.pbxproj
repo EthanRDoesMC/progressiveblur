@@ -13,6 +13,7 @@
 		4FFA476C278A9387005F1D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA476A278A9387005F1D97 /* Main.storyboard */; };
 		4FFA476E278A9388005F1D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA476D278A9388005F1D97 /* Assets.xcassets */; };
 		4FFA4771278A9388005F1D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA476F278A9388005F1D97 /* LaunchScreen.storyboard */; };
+		4FFA477A278A94B2005F1D97 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFA4778278A94B2005F1D97 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,10 @@
 		4FFA476D278A9388005F1D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FFA4770278A9388005F1D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FFA4772278A9388005F1D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FFA4778278A94B2005F1D97 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4FFA477C278A9716005F1D97 /* _UIProgressiveBlurContextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _UIProgressiveBlurContextController.h; sourceTree = "<group>"; };
+		4FFA477D278A975A005F1D97 /* progressiveblur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "progressiveblur-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FFA4781278A9DD6005F1D97 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +64,14 @@
 				4FFA4764278A9387005F1D97 /* AppDelegate.swift */,
 				4FFA4766278A9387005F1D97 /* SceneDelegate.swift */,
 				4FFA4768278A9387005F1D97 /* ViewController.swift */,
+				4FFA4778278A94B2005F1D97 /* DetailViewController.swift */,
+				4FFA477D278A975A005F1D97 /* progressiveblur-Bridging-Header.h */,
+				4FFA477C278A9716005F1D97 /* _UIProgressiveBlurContextController.h */,
 				4FFA476A278A9387005F1D97 /* Main.storyboard */,
 				4FFA476D278A9388005F1D97 /* Assets.xcassets */,
 				4FFA476F278A9388005F1D97 /* LaunchScreen.storyboard */,
 				4FFA4772278A9388005F1D97 /* Info.plist */,
+				4FFA4781278A9DD6005F1D97 /* README.md */,
 			);
 			path = progressiveblur;
 			sourceTree = "<group>";
@@ -99,6 +108,7 @@
 				TargetAttributes = {
 					4FFA4760278A9387005F1D97 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -141,6 +151,7 @@
 				4FFA4769278A9387005F1D97 /* ViewController.swift in Sources */,
 				4FFA4765278A9387005F1D97 /* AppDelegate.swift in Sources */,
 				4FFA4767278A9387005F1D97 /* SceneDelegate.swift in Sources */,
+				4FFA477A278A94B2005F1D97 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +298,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VB9EL34RG4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = progressiveblur/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,6 +317,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethanrdoesmc.progressiveblur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "progressiveblur/progressiveblur-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,9 +329,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VB9EL34RG4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = progressiveblur/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethanrdoesmc.progressiveblur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "progressiveblur/progressiveblur-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
