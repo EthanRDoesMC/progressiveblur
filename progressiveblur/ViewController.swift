@@ -27,7 +27,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(UIBlurEffect.Style.allCases[row].description)"
+        return UIBlurEffect.Style.allCases[row].description
     }
 
     @IBAction func present(_ sender: Any) {
