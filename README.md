@@ -1,6 +1,6 @@
 #  Progressive Blur
 
-In iOS 12, Apple added `_UIProgressiveBlurPresentationController` to UIKit. I noticed it a while back but had no idea how to implement it, lol. Recently, after learning how modal presentations work, I realized I would be able to finally see what this is. While grabbing a header for it, I happened to find that it's used in `TVMLKit`, which would explain why the animation is so fancy.
+In iOS 12, Apple added `_UIProgressiveBlurPresentationController` to UIKit. I noticed it a while back but had no idea how to implement it, lol. Recently, after learning how modal presentations work, I realized I would be able to finally see what this is. While grabbing a header for it, I happened to find that it's used in `TVMLKit`, which would explain why the animation is so fancy. I suspect this is what `UIModalPresentationStyle.blurOverFullScreen` is driven by, but that case is only available in tvOS.
 
 The transition delegate, `_UIProgressiveBlurContextController`, is all you need. It has a property `blurStyle` of type `UIBlurEffect.Style` -- this defaults to `.extraLight = 0`, but I decided to default to `.systemMaterial` in the demo app instead.
 

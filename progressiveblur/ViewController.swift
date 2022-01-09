@@ -32,11 +32,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @IBAction func present(_ sender: Any) {
         let detail: DetailViewController! = storyboard!.instantiateViewController(withIdentifier: "Detail") as? DetailViewController
-        let transitionDelegate = _UIProgressiveBlurContextController()
-        transitionDelegate.blurStyle = UIBlurEffect.Style.allCases[blurPickerView.selectedRow(inComponent: 0)]
         detail.view.backgroundColor = .clear
         detail.overrideUserInterfaceStyle = UIUserInterfaceStyle.init(rawValue: appearancePicker.selectedSegmentIndex)!
         detail.modalPresentationStyle = .custom
+        let transitionDelegate = _UIProgressiveBlurContextController()
+        transitionDelegate.blurStyle = UIBlurEffect.Style.allCases[blurPickerView.selectedRow(inComponent: 0)]
         detail.transitioningDelegate = transitionDelegate
         present(detail, animated: true, completion: nil)
     }
