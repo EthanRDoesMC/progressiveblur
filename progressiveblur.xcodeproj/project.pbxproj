@@ -45,6 +45,7 @@
 		4FFA4758278A9387005F1D97 = {
 			isa = PBXGroup;
 			children = (
+				4FFA4781278A9DD6005F1D97 /* README.md */,
 				4FFA4763278A9387005F1D97 /* progressiveblur */,
 				4FFA4762278A9387005F1D97 /* Products */,
 			);
@@ -71,7 +72,6 @@
 				4FFA476D278A9388005F1D97 /* Assets.xcassets */,
 				4FFA476F278A9388005F1D97 /* LaunchScreen.storyboard */,
 				4FFA4772278A9388005F1D97 /* Info.plist */,
-				4FFA4781278A9DD6005F1D97 /* README.md */,
 			);
 			path = progressiveblur;
 			sourceTree = "<group>";
