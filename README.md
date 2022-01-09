@@ -4,11 +4,11 @@ In iOS 12, Apple added `_UIProgressiveBlurPresentationController` to UIKit. I no
 
 The transition delegate, `_UIProgressiveBlurContextController`, is all you need. It has a property/ivar called `blurStyle`. It seems to have values up to `2`. I suspect the type is something like:
 
-- `.default` (which appears to be `1`)
+- `.extraLight`
 - `.light`
 - `.dark`
 
-I highly suggest switching device appearance to *not* match the blur style to see how the effect works.
+The transition looks best if the presented view controller's view is transparent. The demo app provides this as an option.
 
 For further research, delve into runtime headers for the four `_UIProgressiveBlur` headers or check out TVMLKit's `TVModalPresenter`.
 
