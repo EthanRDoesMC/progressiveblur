@@ -52,6 +52,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FvH-Of-oCf">
+                                <rect key="frame" x="16" y="648.5" width="382" height="32"/>
+                                <segments>
+                                    <segment title="Opaque"/>
+                                    <segment title="Transparent"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,20 +66,24 @@
                             <constraint firstItem="gY8-LZ-U40" firstAttribute="top" secondItem="efF-t1-JZO" secondAttribute="bottom" constant="32" id="0QJ-sk-7fd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VrP-7H-6Te" secondAttribute="trailing" constant="16" id="FiT-yv-Pzc"/>
                             <constraint firstItem="VrP-7H-6Te" firstAttribute="top" secondItem="y3X-O6-OeE" secondAttribute="bottom" constant="8" symbolic="YES" id="ObO-sW-V0e"/>
+                            <constraint firstItem="FvH-Of-oCf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="T6S-8s-Ax8"/>
                             <constraint firstItem="efF-t1-JZO" firstAttribute="right" secondItem="6Tk-OE-BBY" secondAttribute="right" constant="-8" id="aXX-co-GYL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="y3X-O6-OeE" secondAttribute="leading" constant="-16" id="acQ-1j-Ukd"/>
                             <constraint firstItem="VrP-7H-6Te" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bxB-8x-cfR"/>
                             <constraint firstItem="efF-t1-JZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eJC-VR-3Xz"/>
                             <constraint firstItem="efF-t1-JZO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="eT9-my-20X"/>
                             <constraint firstItem="gY8-LZ-U40" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="gKw-vo-kNE"/>
+                            <constraint firstItem="FvH-Of-oCf" firstAttribute="top" secondItem="VrP-7H-6Te" secondAttribute="bottom" constant="8" id="gww-OV-sLy"/>
                             <constraint firstItem="y3X-O6-OeE" firstAttribute="top" secondItem="gY8-LZ-U40" secondAttribute="bottom" constant="16" id="h6k-Ny-7DX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y3X-O6-OeE" secondAttribute="trailing" constant="16" id="ljc-Ec-wfx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FvH-Of-oCf" secondAttribute="trailing" constant="16" id="xw6-Vd-td5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gY8-LZ-U40" secondAttribute="trailing" constant="32" id="yCF-Mb-K8i"/>
                             <constraint firstItem="efF-t1-JZO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zY3-5a-sg8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="blurStyle" destination="VrP-7H-6Te" id="h0k-qd-E4O"/>
+                        <outlet property="colorSegment" destination="FvH-Of-oCf" id="2ii-Hn-PkK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za9-Ih-WQc">
-                                <rect key="frame" x="364" y="44" width="30" height="30"/>
+                                <rect key="frame" x="364" y="52" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Za9-Ih-WQc" secondAttribute="height" multiplier="1:1" id="j7m-M6-KLk"/>
                                 </constraints>
@@ -97,12 +108,20 @@
                                     <action selector="dismiss:" destination="k2J-fZ-2am" eventType="touchUpInside" id="5MX-qk-0pc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQ3-63-ZzV">
+                                <rect key="frame" x="168.5" y="429.5" width="77.5" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CCg-Eh-lVo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Za9-Ih-WQc" firstAttribute="top" secondItem="CCg-Eh-lVo" secondAttribute="top" id="2OS-fn-X8B"/>
+                            <constraint firstItem="Za9-Ih-WQc" firstAttribute="top" secondItem="CCg-Eh-lVo" secondAttribute="top" constant="8" id="2OS-fn-X8B"/>
                             <constraint firstItem="CCg-Eh-lVo" firstAttribute="trailing" secondItem="Za9-Ih-WQc" secondAttribute="trailing" constant="20" id="Cae-BM-hU7"/>
+                            <constraint firstItem="kQ3-63-ZzV" firstAttribute="centerY" secondItem="WtE-vj-BNv" secondAttribute="centerY" id="WBl-iI-vsD"/>
+                            <constraint firstItem="kQ3-63-ZzV" firstAttribute="centerX" secondItem="WtE-vj-BNv" secondAttribute="centerX" id="xuB-nj-W49"/>
                         </constraints>
                     </view>
                 </viewController>
