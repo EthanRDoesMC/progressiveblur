@@ -7,31 +7,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet var blurStyle: UISegmentedControl!
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    @IBOutlet var blurPickerView: UIPickerView!
+    @IBOutlet var appearancePicker: UISegmentedControl!
 
-    @IBOutlet var colorSegment: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
+        blurPickerView.selectRow(UIBlurEffect.Style.allCases.firstIndex(of: .systemMaterial)!, inComponent: 0, animated: false)
         // Do any additional setup after loading the view.
     }
 
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return UIBlurEffect.Style.allCases.count
+    }
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return "\(UIBlurEffect.Style.allCases[row].description)"
+    }
+
     @IBAction func present(_ sender: Any) {
-        let detail: UIViewController! = storyboard!.instantiateViewController(withIdentifier: "Detail")
+        let detail: DetailViewController! = storyboard!.instantiateViewController(withIdentifier: "Detail") as? DetailViewController
         let transitionDelegate = _UIProgressiveBlurContextController()
-        transitionDelegate.blurStyle = blurStyle.selectedSegmentIndex
-        switch colorSegment.selectedSegmentIndex {
-        case 0:
-            break
-        case 1:
-            detail.view.backgroundColor = .clear
-        default:
-            break
-        }
+        transitionDelegate.blurStyle = UIBlurEffect.Style.allCases[blurPickerView.selectedRow(inComponent: 0)]
+        detail.view.backgroundColor = .clear
+        detail.overrideUserInterfaceStyle = UIUserInterfaceStyle.init(rawValue: appearancePicker.selectedSegmentIndex)!
         detail.modalPresentationStyle = .custom
         detail.transitioningDelegate = transitionDelegate
         present(detail, animated: true, completion: nil)
     }
 
 }
-

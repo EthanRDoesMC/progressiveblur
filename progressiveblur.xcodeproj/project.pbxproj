@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1258E6278B53B60003BA19 /* BlurEffectStyleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1258E5278B53B60003BA19 /* BlurEffectStyleExtension.swift */; };
 		4FFA4765278A9387005F1D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFA4764278A9387005F1D97 /* AppDelegate.swift */; };
 		4FFA4767278A9387005F1D97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFA4766278A9387005F1D97 /* SceneDelegate.swift */; };
 		4FFA4769278A9387005F1D97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFA4768278A9387005F1D97 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F1258E5278B53B60003BA19 /* BlurEffectStyleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectStyleExtension.swift; sourceTree = "<group>"; };
 		4FFA4761278A9387005F1D97 /* progressiveblur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = progressiveblur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFA4764278A9387005F1D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFA4766278A9387005F1D97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4FFA4766278A9387005F1D97 /* SceneDelegate.swift */,
 				4FFA4768278A9387005F1D97 /* ViewController.swift */,
 				4FFA4778278A94B2005F1D97 /* DetailViewController.swift */,
+				4F1258E5278B53B60003BA19 /* BlurEffectStyleExtension.swift */,
 				4FFA477D278A975A005F1D97 /* progressiveblur-Bridging-Header.h */,
 				4FFA477C278A9716005F1D97 /* _UIProgressiveBlurContextController.h */,
 				4FFA476A278A9387005F1D97 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FFA4769278A9387005F1D97 /* ViewController.swift in Sources */,
+				4F1258E6278B53B60003BA19 /* BlurEffectStyleExtension.swift in Sources */,
 				4FFA4765278A9387005F1D97 /* AppDelegate.swift in Sources */,
 				4FFA4767278A9387005F1D97 /* SceneDelegate.swift in Sources */,
 				4FFA477A278A94B2005F1D97 /* DetailViewController.swift in Sources */,
@@ -228,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -283,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -301,7 +305,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VB9EL34RG4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = progressiveblur/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -309,6 +313,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +337,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VB9EL34RG4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = progressiveblur/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -340,6 +345,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,17 +14,17 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="original research by ethanrdoesmc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJt-We-Q8l">
-                                <rect key="frame" x="16" y="474.5" width="382" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="original research by EthanRDoesMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJt-We-Q8l">
+                                <rect key="frame" x="8" y="434" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="progressive blur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBu-Na-JZf">
-                                <rect key="frame" x="16" y="429.5" width="382" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progressive Blur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBu-Na-JZf">
+                                <rect key="frame" x="8" y="389" width="374" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,13 +33,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KJt-We-Q8l" firstAttribute="top" secondItem="NBu-Na-JZf" secondAttribute="bottom" constant="8" symbolic="YES" id="56i-FL-TtW"/>
-                            <constraint firstItem="NBu-Na-JZf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AS2-C2-Z5v"/>
-                            <constraint firstItem="NBu-Na-JZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ojr-NB-gkb"/>
-                            <constraint firstItem="NBu-Na-JZf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="g2G-D2-sNu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KJt-We-Q8l" secondAttribute="trailing" constant="16" id="igt-jN-Ngs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NBu-Na-JZf" secondAttribute="trailing" constant="16" id="xZu-ku-D1I"/>
-                            <constraint firstItem="KJt-We-Q8l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yET-5I-seC"/>
+                            <constraint firstItem="KJt-We-Q8l" firstAttribute="leading" secondItem="NBu-Na-JZf" secondAttribute="leading" id="2tE-3S-Grx"/>
+                            <constraint firstItem="KJt-We-Q8l" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="22.5" id="603-8m-iS4"/>
+                            <constraint firstItem="NBu-Na-JZf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DCr-Di-fzA"/>
+                            <constraint firstItem="KJt-We-Q8l" firstAttribute="centerX" secondItem="NBu-Na-JZf" secondAttribute="centerX" id="NDb-Gv-3vb"/>
+                            <constraint firstItem="NBu-Na-JZf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-14.5" id="NzF-wE-pe7"/>
+                            <constraint firstItem="KJt-We-Q8l" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WKr-a4-ZvB"/>
+                            <constraint firstItem="NBu-Na-JZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Yx2-5z-eAV"/>
+                            <constraint firstItem="KJt-We-Q8l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="apq-5i-4x2"/>
                         </constraints>
                     </view>
                 </viewController>
