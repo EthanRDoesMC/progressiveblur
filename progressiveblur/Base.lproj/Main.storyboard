@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -66,11 +65,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original research by EthanRDoesMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsY-Wx-xis">
+                                <rect key="frame" x="8" y="134" width="398" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tsY-Wx-xis" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4jV-d9-nFu"/>
                             <constraint firstItem="S29-7U-CZO" firstAttribute="top" secondItem="Tlb-hg-FAP" secondAttribute="bottom" constant="8" symbolic="YES" id="4rK-AT-N1X"/>
+                            <constraint firstItem="tsY-Wx-xis" firstAttribute="top" secondItem="efF-t1-JZO" secondAttribute="bottom" constant="8" symbolic="YES" id="59L-fb-J6G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gY8-LZ-U40" secondAttribute="bottom" constant="32" id="5lf-oV-C0L"/>
                             <constraint firstItem="efF-t1-JZO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="BTs-or-lWN"/>
                             <constraint firstItem="1hE-a8-mBh" firstAttribute="top" secondItem="d3M-F3-wQK" secondAttribute="bottom" constant="8" symbolic="YES" id="Szv-pF-XFd"/>
@@ -89,6 +96,7 @@
                             <constraint firstItem="S29-7U-CZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="upm-bP-eTs"/>
                             <constraint firstItem="1hE-a8-mBh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vhT-XW-7uW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gY8-LZ-U40" secondAttribute="trailing" constant="32" id="yCF-Mb-K8i"/>
+                            <constraint firstItem="tsY-Wx-xis" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="ykx-Ve-Co8"/>
                         </constraints>
                     </view>
                     <connections>
